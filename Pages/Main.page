@@ -34,7 +34,8 @@
 							"ImagePosition": "Leading",
 							"FullWidth": false,
 							"Visible": true,
-							"Enabled": true
+							"Enabled": true,
+							"OnPress": "/demosampleapp/Actions/NavToCustomers_List.action"
 						}
 					],
 					"Layout": {
