@@ -56,6 +56,7 @@ let demosampleapp_actions_logging_loguploadsuccessful_action = __webpack_require
 let demosampleapp_actions_logging_uploadlog_action = __webpack_require__(/*! ./demosampleapp/Actions/Logging/UploadLog.action */ "./build.definitions/demosampleapp/Actions/Logging/UploadLog.action")
 let demosampleapp_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./demosampleapp/Actions/Logging/UploadLogProgress.action */ "./build.definitions/demosampleapp/Actions/Logging/UploadLogProgress.action")
 let demosampleapp_actions_navtocustomers_detail_action = __webpack_require__(/*! ./demosampleapp/Actions/NavToCustomers_Detail.action */ "./build.definitions/demosampleapp/Actions/NavToCustomers_Detail.action")
+let demosampleapp_actions_navtocustomers_edit_action = __webpack_require__(/*! ./demosampleapp/Actions/NavToCustomers_Edit.action */ "./build.definitions/demosampleapp/Actions/NavToCustomers_Edit.action")
 let demosampleapp_actions_navtocustomers_list_action = __webpack_require__(/*! ./demosampleapp/Actions/NavToCustomers_List.action */ "./build.definitions/demosampleapp/Actions/NavToCustomers_List.action")
 let demosampleapp_actions_sampleservicev4_service_closeoffline_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/CloseOffline.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/CloseOffline.action")
 let demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/CloseOfflineFailureMessage.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/CloseOfflineFailureMessage.action")
@@ -136,6 +137,7 @@ module.exports = {
 	demosampleapp_actions_logging_uploadlog_action : demosampleapp_actions_logging_uploadlog_action,
 	demosampleapp_actions_logging_uploadlogprogress_action : demosampleapp_actions_logging_uploadlogprogress_action,
 	demosampleapp_actions_navtocustomers_detail_action : demosampleapp_actions_navtocustomers_detail_action,
+	demosampleapp_actions_navtocustomers_edit_action : demosampleapp_actions_navtocustomers_edit_action,
 	demosampleapp_actions_navtocustomers_list_action : demosampleapp_actions_navtocustomers_list_action,
 	demosampleapp_actions_sampleservicev4_service_closeoffline_action : demosampleapp_actions_sampleservicev4_service_closeoffline_action,
 	demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action : demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action,
@@ -1049,7 +1051,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \*********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"BodyText":"{DateOfBirth}","Description":"{CustomerID}","Footnote":"{EmailAddress}","HeadlineText":"{LastName}","StatusText":"{PhoneNumber}","Subhead":"{FirstName}","DetailImage":"sap-icon://customer"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Name":"KeyValue1","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Name":"KeyValue3","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Name":"KeyValue0","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_Detail","Caption":"Details","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"BodyText":"{DateOfBirth}","Description":"{CustomerID}","Footnote":"{EmailAddress}","HeadlineText":"{LastName}","StatusText":"{PhoneNumber}","Subhead":"{FirstName}","DetailImage":"sap-icon://customer"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Name":"KeyValue1","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Name":"KeyValue3","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Name":"KeyValue0","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_Detail","Caption":"Details","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demosampleapp/Actions/NavToCustomers_Edit.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1390,6 +1392,16 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToCustomers_Detail"},"PageToOpen":"/demosampleapp/Pages/Customers_Detail.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/demosampleapp/Actions/NavToCustomers_Edit.action":
+/*!****************************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Actions/NavToCustomers_Edit.action ***!
+  \****************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToCustomers_Edit"},"PageToOpen":"/demosampleapp/Pages/Customers_Edit.page","ModalPage":true}
 
 /***/ }),
 

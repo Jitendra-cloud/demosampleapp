@@ -99,7 +99,8 @@
 				"SystemItem": "Edit",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/demosampleapp/Actions/NavToCustomers_Edit.action"
 			}
 		],
 		"_Name": "ActionBar1"
