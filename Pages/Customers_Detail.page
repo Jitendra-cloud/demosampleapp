@@ -10,15 +10,14 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "Subhead",
+						"Subhead": "{FirstName}",
 						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerID}",
-						"StatusText": "Status",
-						"SubstatusText": "Substatus",
+						"StatusText": "{PhoneNumber}",
 						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
-						"HeadlineText": "Headline",
+						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
