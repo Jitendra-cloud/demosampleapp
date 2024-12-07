@@ -54,6 +54,7 @@ let demosampleapp_actions_logging_loguploadfailure_action = __webpack_require__(
 let demosampleapp_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./demosampleapp/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/demosampleapp/Actions/Logging/LogUploadSuccessful.action")
 let demosampleapp_actions_logging_uploadlog_action = __webpack_require__(/*! ./demosampleapp/Actions/Logging/UploadLog.action */ "./build.definitions/demosampleapp/Actions/Logging/UploadLog.action")
 let demosampleapp_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./demosampleapp/Actions/Logging/UploadLogProgress.action */ "./build.definitions/demosampleapp/Actions/Logging/UploadLogProgress.action")
+let demosampleapp_actions_navtocustomers_detail_action = __webpack_require__(/*! ./demosampleapp/Actions/NavToCustomers_Detail.action */ "./build.definitions/demosampleapp/Actions/NavToCustomers_Detail.action")
 let demosampleapp_actions_navtocustomers_list_action = __webpack_require__(/*! ./demosampleapp/Actions/NavToCustomers_List.action */ "./build.definitions/demosampleapp/Actions/NavToCustomers_List.action")
 let demosampleapp_actions_sampleservicev4_service_closeoffline_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/CloseOffline.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/CloseOffline.action")
 let demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/CloseOfflineFailureMessage.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/CloseOfflineFailureMessage.action")
@@ -74,6 +75,7 @@ let demosampleapp_jsconfig_json = __webpack_require__(/*! ./demosampleapp/jsconf
 let demosampleapp_pages_application_about_page = __webpack_require__(/*! ./demosampleapp/Pages/Application/About.page */ "./build.definitions/demosampleapp/Pages/Application/About.page")
 let demosampleapp_pages_application_support_page = __webpack_require__(/*! ./demosampleapp/Pages/Application/Support.page */ "./build.definitions/demosampleapp/Pages/Application/Support.page")
 let demosampleapp_pages_application_useractivitylog_page = __webpack_require__(/*! ./demosampleapp/Pages/Application/UserActivityLog.page */ "./build.definitions/demosampleapp/Pages/Application/UserActivityLog.page")
+let demosampleapp_pages_customers_detail_page = __webpack_require__(/*! ./demosampleapp/Pages/Customers_Detail.page */ "./build.definitions/demosampleapp/Pages/Customers_Detail.page")
 let demosampleapp_pages_customers_list_page = __webpack_require__(/*! ./demosampleapp/Pages/Customers_List.page */ "./build.definitions/demosampleapp/Pages/Customers_List.page")
 let demosampleapp_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./demosampleapp/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/demosampleapp/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let demosampleapp_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./demosampleapp/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/demosampleapp/Pages/ErrorArchive/ErrorArchive_List.page")
@@ -129,6 +131,7 @@ module.exports = {
 	demosampleapp_actions_logging_loguploadsuccessful_action : demosampleapp_actions_logging_loguploadsuccessful_action,
 	demosampleapp_actions_logging_uploadlog_action : demosampleapp_actions_logging_uploadlog_action,
 	demosampleapp_actions_logging_uploadlogprogress_action : demosampleapp_actions_logging_uploadlogprogress_action,
+	demosampleapp_actions_navtocustomers_detail_action : demosampleapp_actions_navtocustomers_detail_action,
 	demosampleapp_actions_navtocustomers_list_action : demosampleapp_actions_navtocustomers_list_action,
 	demosampleapp_actions_sampleservicev4_service_closeoffline_action : demosampleapp_actions_sampleservicev4_service_closeoffline_action,
 	demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action : demosampleapp_actions_sampleservicev4_service_closeofflinefailuremessage_action,
@@ -149,6 +152,7 @@ module.exports = {
 	demosampleapp_pages_application_about_page : demosampleapp_pages_application_about_page,
 	demosampleapp_pages_application_support_page : demosampleapp_pages_application_support_page,
 	demosampleapp_pages_application_useractivitylog_page : demosampleapp_pages_application_useractivitylog_page,
+	demosampleapp_pages_customers_detail_page : demosampleapp_pages_customers_detail_page,
 	demosampleapp_pages_customers_list_page : demosampleapp_pages_customers_list_page,
 	demosampleapp_pages_errorarchive_errorarchive_detail_page : demosampleapp_pages_errorarchive_errorarchive_detail_page,
 	demosampleapp_pages_errorarchive_errorarchive_list_page : demosampleapp_pages_errorarchive_errorarchive_list_page,
@@ -1033,13 +1037,23 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/demosampleapp/Pages/Customers_Detail.page":
+/*!*********************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Pages/Customers_Detail.page ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"Subhead","Footnote":"Footnote","Description":"Description","StatusText":"Status","SubstatusText":"Substatus","DetailImage":"res://mdk_logo.png","DetailImageIsCircular":false,"BodyText":"Show the body text","HeadlineText":"Headline","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"BodyText":"{DateOfBirth}","Description":"{CustomerID}","Footnote":"{EmailAddress}","HeadlineText":"{LastName}","StatusText":"{PhoneNumber}","Subhead":"{FirstName}","DetailImage":"sap-icon://customer"}},"Visible":true},{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Name":"KeyValue1","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Name":"KeyValue3","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Name":"KeyValue0","KeyName":"Country","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":2}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Customers_Detail","Caption":"Details","PrefersLargeCaption":true,"DesignTimeTarget":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"}}
+
+/***/ }),
+
 /***/ "./build.definitions/demosampleapp/Pages/Customers_List.page":
 /*!*******************************************************************!*\
   !*** ./build.definitions/demosampleapp/Pages/Customers_List.page ***!
   \*******************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ContactCell","Target":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ContactCell":{"Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"DetailImage":"","Headline":"{LastName}","Subheadline":"{FirstName}","Description":"{City}","ActivityItems":[{"_Name":"SectionContactCell0ActivityItems0","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"SectionContactCell0ActivityItems1","ActivityType":"Email","ActivityValue":"{EmailAddress}"}]},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Enabled":true,"BarcodeScanner":true}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Customers_List","Caption":"Customers","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","Target":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCell":{"Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"DetailImage":"","Headline":"{LastName}","Subheadline":"{FirstName}","Description":"{City}","OnPress":"/demosampleapp/Actions/NavToCustomers_Detail.action","ActivityItems":[{"_Name":"SectionContactCell0ActivityItems0","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"SectionContactCell0ActivityItems1","ActivityType":"Email","ActivityValue":"{EmailAddress}"}]},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Enabled":true,"BarcodeScanner":true}}]}],"_Type":"Page","_Name":"Customers_List","Caption":"Customers","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -1340,6 +1354,16 @@ module.exports = {"ActionResult":{"_Name":"UploadLog"},"ActivityIndicatorText":"
 /***/ ((module) => {
 
 module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","CompletionTimeout":2,"Message":"Uploading Log Files...","OnSuccess":"/demosampleapp/Actions/Logging/UploadLog.action","_Type":"Action.Type.ProgressBanner"}
+
+/***/ }),
+
+/***/ "./build.definitions/demosampleapp/Actions/NavToCustomers_Detail.action":
+/*!******************************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Actions/NavToCustomers_Detail.action ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToCustomers_Detail"},"PageToOpen":"/demosampleapp/Pages/Customers_Detail.page"}
 
 /***/ }),
 

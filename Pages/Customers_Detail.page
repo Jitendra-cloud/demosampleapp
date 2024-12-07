@@ -1,21 +1,23 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "Subhead",
-						"Footnote": "Footnote",
-						"Description": "Description",
+						"Footnote": "{EmailAddress}",
+						"Description": "{CustomerID}",
 						"StatusText": "Status",
 						"SubstatusText": "Substatus",
-						"DetailImage": "res://mdk_logo.png",
+						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
-						"BodyText": "Show the body text",
+						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "Headline",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
@@ -30,15 +32,11 @@
 							"DetailImage": "sap-icon://customer"
 						}
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -73,23 +71,25 @@
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
-	"_Type": "Page",
-	"_Name": "Customers_Detail",
-	"Caption": "Details",
-	"PrefersLargeCaption": true,
 	"DesignTimeTarget": {
 		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers"
-	}
+	},
+	"_Type": "Page",
+	"_Name": "Customers_Detail",
+	"Caption": "Details",
+	"PrefersLargeCaption": true
 }
