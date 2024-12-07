@@ -90,5 +90,18 @@
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
 	"Caption": "Details",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

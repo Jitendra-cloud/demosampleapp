@@ -43,6 +43,7 @@ let demosampleapp_actions_application_usermenupopover_action = __webpack_require
 let demosampleapp_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./demosampleapp/Actions/CloseModalPage_Cancel.action */ "./build.definitions/demosampleapp/Actions/CloseModalPage_Cancel.action")
 let demosampleapp_actions_closemodalpage_complete_action = __webpack_require__(/*! ./demosampleapp/Actions/CloseModalPage_Complete.action */ "./build.definitions/demosampleapp/Actions/CloseModalPage_Complete.action")
 let demosampleapp_actions_closepage_action = __webpack_require__(/*! ./demosampleapp/Actions/ClosePage.action */ "./build.definitions/demosampleapp/Actions/ClosePage.action")
+let demosampleapp_actions_customers_updateentity_action = __webpack_require__(/*! ./demosampleapp/Actions/Customers_UpdateEntity.action */ "./build.definitions/demosampleapp/Actions/Customers_UpdateEntity.action")
 let demosampleapp_actions_errorarchive_errorarchive_syncfailure_action = __webpack_require__(/*! ./demosampleapp/Actions/ErrorArchive/ErrorArchive_SyncFailure.action */ "./build.definitions/demosampleapp/Actions/ErrorArchive/ErrorArchive_SyncFailure.action")
 let demosampleapp_actions_errorarchive_navtoerrorarchive_detail_action = __webpack_require__(/*! ./demosampleapp/Actions/ErrorArchive/NavToErrorArchive_Detail.action */ "./build.definitions/demosampleapp/Actions/ErrorArchive/NavToErrorArchive_Detail.action")
 let demosampleapp_actions_errorarchive_navtoerrorarchive_list_action = __webpack_require__(/*! ./demosampleapp/Actions/ErrorArchive/NavToErrorArchive_List.action */ "./build.definitions/demosampleapp/Actions/ErrorArchive/NavToErrorArchive_List.action")
@@ -66,6 +67,7 @@ let demosampleapp_actions_sampleservicev4_service_initializeofflinefailuremessag
 let demosampleapp_actions_sampleservicev4_service_syncfailuremessage_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action")
 let demosampleapp_actions_sampleservicev4_service_syncstartedmessage_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/SyncStartedMessage.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/SyncStartedMessage.action")
 let demosampleapp_actions_sampleservicev4_service_uploadoffline_action = __webpack_require__(/*! ./demosampleapp/Actions/SampleServiceV4/Service/UploadOffline.action */ "./build.definitions/demosampleapp/Actions/SampleServiceV4/Service/UploadOffline.action")
+let demosampleapp_actions_updatecustomerentityfailuremessage_action = __webpack_require__(/*! ./demosampleapp/Actions/UpdateCustomerEntityFailureMessage.action */ "./build.definitions/demosampleapp/Actions/UpdateCustomerEntityFailureMessage.action")
 let demosampleapp_globals_application_appdefinition_version_global = __webpack_require__(/*! ./demosampleapp/Globals/Application/AppDefinition_Version.global */ "./build.definitions/demosampleapp/Globals/Application/AppDefinition_Version.global")
 let demosampleapp_globals_application_applicationname_global = __webpack_require__(/*! ./demosampleapp/Globals/Application/ApplicationName.global */ "./build.definitions/demosampleapp/Globals/Application/ApplicationName.global")
 let demosampleapp_globals_application_supportemail_global = __webpack_require__(/*! ./demosampleapp/Globals/Application/SupportEmail.global */ "./build.definitions/demosampleapp/Globals/Application/SupportEmail.global")
@@ -76,6 +78,7 @@ let demosampleapp_pages_application_about_page = __webpack_require__(/*! ./demos
 let demosampleapp_pages_application_support_page = __webpack_require__(/*! ./demosampleapp/Pages/Application/Support.page */ "./build.definitions/demosampleapp/Pages/Application/Support.page")
 let demosampleapp_pages_application_useractivitylog_page = __webpack_require__(/*! ./demosampleapp/Pages/Application/UserActivityLog.page */ "./build.definitions/demosampleapp/Pages/Application/UserActivityLog.page")
 let demosampleapp_pages_customers_detail_page = __webpack_require__(/*! ./demosampleapp/Pages/Customers_Detail.page */ "./build.definitions/demosampleapp/Pages/Customers_Detail.page")
+let demosampleapp_pages_customers_edit_page = __webpack_require__(/*! ./demosampleapp/Pages/Customers_Edit.page */ "./build.definitions/demosampleapp/Pages/Customers_Edit.page")
 let demosampleapp_pages_customers_list_page = __webpack_require__(/*! ./demosampleapp/Pages/Customers_List.page */ "./build.definitions/demosampleapp/Pages/Customers_List.page")
 let demosampleapp_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./demosampleapp/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/demosampleapp/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let demosampleapp_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./demosampleapp/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/demosampleapp/Pages/ErrorArchive/ErrorArchive_List.page")
@@ -120,6 +123,7 @@ module.exports = {
 	demosampleapp_actions_closemodalpage_cancel_action : demosampleapp_actions_closemodalpage_cancel_action,
 	demosampleapp_actions_closemodalpage_complete_action : demosampleapp_actions_closemodalpage_complete_action,
 	demosampleapp_actions_closepage_action : demosampleapp_actions_closepage_action,
+	demosampleapp_actions_customers_updateentity_action : demosampleapp_actions_customers_updateentity_action,
 	demosampleapp_actions_errorarchive_errorarchive_syncfailure_action : demosampleapp_actions_errorarchive_errorarchive_syncfailure_action,
 	demosampleapp_actions_errorarchive_navtoerrorarchive_detail_action : demosampleapp_actions_errorarchive_navtoerrorarchive_detail_action,
 	demosampleapp_actions_errorarchive_navtoerrorarchive_list_action : demosampleapp_actions_errorarchive_navtoerrorarchive_list_action,
@@ -143,6 +147,7 @@ module.exports = {
 	demosampleapp_actions_sampleservicev4_service_syncfailuremessage_action : demosampleapp_actions_sampleservicev4_service_syncfailuremessage_action,
 	demosampleapp_actions_sampleservicev4_service_syncstartedmessage_action : demosampleapp_actions_sampleservicev4_service_syncstartedmessage_action,
 	demosampleapp_actions_sampleservicev4_service_uploadoffline_action : demosampleapp_actions_sampleservicev4_service_uploadoffline_action,
+	demosampleapp_actions_updatecustomerentityfailuremessage_action : demosampleapp_actions_updatecustomerentityfailuremessage_action,
 	demosampleapp_globals_application_appdefinition_version_global : demosampleapp_globals_application_appdefinition_version_global,
 	demosampleapp_globals_application_applicationname_global : demosampleapp_globals_application_applicationname_global,
 	demosampleapp_globals_application_supportemail_global : demosampleapp_globals_application_supportemail_global,
@@ -153,6 +158,7 @@ module.exports = {
 	demosampleapp_pages_application_support_page : demosampleapp_pages_application_support_page,
 	demosampleapp_pages_application_useractivitylog_page : demosampleapp_pages_application_useractivitylog_page,
 	demosampleapp_pages_customers_detail_page : demosampleapp_pages_customers_detail_page,
+	demosampleapp_pages_customers_edit_page : demosampleapp_pages_customers_edit_page,
 	demosampleapp_pages_customers_list_page : demosampleapp_pages_customers_list_page,
 	demosampleapp_pages_errorarchive_errorarchive_detail_page : demosampleapp_pages_errorarchive_errorarchive_detail_page,
 	demosampleapp_pages_errorarchive_errorarchive_list_page : demosampleapp_pages_errorarchive_errorarchive_list_page,
@@ -1043,7 +1049,17 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \*********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"BodyText":"{DateOfBirth}","Description":"{CustomerID}","Footnote":"{EmailAddress}","HeadlineText":"{LastName}","StatusText":"{PhoneNumber}","Subhead":"{FirstName}","DetailImage":"sap-icon://customer"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Name":"KeyValue1","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Name":"KeyValue3","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Name":"KeyValue0","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_Detail","Caption":"Details","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"BodyText":"{DateOfBirth}","Description":"{CustomerID}","Footnote":"{EmailAddress}","HeadlineText":"{LastName}","StatusText":"{PhoneNumber}","Subhead":"{FirstName}","DetailImage":"sap-icon://customer"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Name":"KeyValue1","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Name":"KeyValue3","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Name":"KeyValue0","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_Detail","Caption":"Details","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
+/***/ "./build.definitions/demosampleapp/Pages/Customers_Edit.page":
+/*!*******************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Pages/Customers_Edit.page ***!
+  \*******************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"Value":"{FirstName}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCFirstName","IsVisible":true,"Separator":true,"Caption":"First Name","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":true},{"Value":"{LastName}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCLastName","IsVisible":true,"Separator":true,"Caption":"Last Name","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":true},{"Value":"{PhoneNumber}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCPhone","IsVisible":true,"Separator":true,"Caption":"Phone","PlaceHolder":"PlaceHolder","KeyboardType":"Phone","Enabled":true,"IsEditable":true},{"Value":"{EmailAddress}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCEmail","IsVisible":true,"Separator":true,"Caption":"Email","PlaceHolder":"PlaceHolder","KeyboardType":"Email","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Customers_Edit","Caption":"Update Customer","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/demosampleapp/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demosampleapp/Actions/Customers_UpdateEntity.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1244,6 +1260,16 @@ module.exports = {"DismissModal":"Action.Type.ClosePage.Completed","CancelPendin
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ClosePage"}
+
+/***/ }),
+
+/***/ "./build.definitions/demosampleapp/Actions/Customers_UpdateEntity.action":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Actions/Customers_UpdateEntity.action ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Customers_UpdateEntity"},"OnFailure":"/demosampleapp/Actions/UpdateCustomerEntityFailureMessage.action","OnSuccess":"/demosampleapp/Actions/CloseModalPage_Complete.action","Target":{"Service":"/demosampleapp/Services/SampleServiceV4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"},"Properties":{"EmailAddress":"#Control:FCEmail/#Value","FirstName":"#Control:FCFirstName/#Value","LastName":"#Control:FCLastName/#Value","PhoneNumber":"#Control:FCPhone/#Value"}}
 
 /***/ }),
 
@@ -1474,6 +1500,16 @@ module.exports = {"Message":"Upload in progress...","CompletionMessage":"Sync co
 /***/ ((module) => {
 
 module.exports = {"Service":"/demosampleapp/Services/SampleServiceV4.service","_Type":"Action.Type.OfflineOData.Upload","ActionResult":{"_Name":"sync"},"OnSuccess":"/demosampleapp/Actions/SampleServiceV4/Service/DownloadStartedMessage.action","OnFailure":"/demosampleapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/demosampleapp/Actions/UpdateCustomerEntityFailureMessage.action":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/demosampleapp/Actions/UpdateCustomerEntityFailureMessage.action ***!
+  \*******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"UpdateCustomerEntityFailureMessage"},"Message":"Failed to Save Customer Updates - {#ActionResults:Customers_UpdateEntity/error}","Title":"Update Customer","OKCaption":"OK"}
 
 /***/ }),
 
